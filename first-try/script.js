@@ -1,0 +1,1 @@
+alert('first day at javascript core practice');

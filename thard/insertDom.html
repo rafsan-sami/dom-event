@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        article{
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <section>
+        <h3>Exploring DOM</h3>
+        <article id="first-artical">
+            <h3 class="sami">artcal 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+
+        <article class="spicial">
+            <h3 class="sami">artcal 2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+            
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+
+        <article class="spicial">
+            <h3 class="sami">artcal 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+            
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+
+        <article>
+            <ul id="somthing">
+                <li>list item -1</li>
+                <li>list item -2</li>
+                <li>list item -3</li>
+                <li>list item -4</li>
+                <li>list item -5</li>
+            </ul>
+        </article>
+    </section>
+    
+
+    <script>
+        
+        var element = document.getElementById("first-artical");
+        var para = document.createElement("p");
+        para.innerText = "This is added by javascript";
+        element.appendChild(para);
+        
+
+        var add = document.getElementById("somthing");
+        var addLI = document.createElement("li");
+        addLI.innerText = "This list is made by js";
+        add.appendChild(addLI);
+
+    </script>
+
+</body>
+</html>

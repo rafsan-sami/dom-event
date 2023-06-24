@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        article{
+            border: 2px solid red;
+            border-radius: 20px;
+            margin: 5px;
+            padding: 5px;
+        }
+        .spicial h3{}
+    </style>
+
+</head>
+<body>
+    <section>
+        <h3>Exploring DOM</h3>
+        <article>
+            <h3 class="sami">artcal 1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+
+        <article class="spicial">
+            <h3 class="sami">artcal 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+            
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+
+        <article class="spicial">
+            <h3 class="sami">artcal 3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime voluptatem libero atque! Nostrum, illo temporibus aliquam eaque quis dolorum sapiente dignissimos, esse saepe maiores nesciunt autem illum culpa reiciendis dolore.</p>
+            
+            <p class="discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quasi accusantium cupiditate consequuntur obcaecati illo tempora itaque, voluptate quibusdam veniam?</p>
+        </article>
+    </section>
+
+    <script>
+        var sam = document.getElementsByClassName('sami');
+        for (let i = 0; i < sam.length; i++) {
+            const element = sam[i];
+            element.style.backgroundColor = 'lightblue';
+            element.innerHTML = 'Rafsan' + (i + 1);
+        }
+
+        var yo = document.querySelectorAll('.spicial h3');
+        for (let i = 0; i < yo.length; i++) {
+            const element = yo[i];
+            element.style.backgroundColor = 'black';
+            element.style.color = 'white';
+            element.setAttribute('title', 'hi im rafsam');
+        }
+    </script>
+
+</body>
+</html>
